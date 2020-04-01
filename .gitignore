@@ -1,0 +1,9 @@
+.python-version
+*.ipynb_checkpoints
+*__pycache__
+train_data/*
+!train_data/label_only_number.json
+!train_data/label.json
+tmp/*
+*.ipynb
+!model.hdf5
