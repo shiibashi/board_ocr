@@ -73,10 +73,10 @@ def convert_nn_input(df, label_dict):
     y = numpy.array(y)
     return x, y
 
-def load_ml_data(filepath):
-    img = Image.open(filepath).convert("L").resize((20, 20))
-    arr = (numpy.array(img) / 255.0).reshape(20, 20, 1)
-    return arr
+#def load_ml_data(filepath):
+#    img = Image.open(filepath).convert("L").resize((20, 20))
+#    arr = (numpy.array(img) / 255.0).reshape(20, 20, 1)
+#    return arr
 
 def load_ml_data(filepath):
     img = Image.open(filepath).convert("L").resize((20, 20)).point(lambda x: 0 if x < 50 else 255)
