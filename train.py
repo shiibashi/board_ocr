@@ -78,6 +78,12 @@ def load_ml_data(filepath):
     arr = (numpy.array(img) / 255.0).reshape(20, 20, 1)
     return arr
 
+def load_ml_data(filepath):
+    img = Image.open(filepath).convert("L").resize((20, 20)).point(lambda x: 0 if x < 50 else 255)
+    arr = (numpy.array(img) / 255.0).reshape(20, 20, 1)
+    return arr
+
+
 def convert_label_data(label_id, label_dict):
     return [1 if k == label_id else 0 for k, v in label_dict.items()]
 
