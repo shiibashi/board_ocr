@@ -28,3 +28,7 @@ python update_via_region_only_4area.py\
 ```
 via_to_png_script.py
 ```
+
+# _
+
+![board_ocr](https://user-images.githubusercontent.com/19276585/96874998-b39b5300-14b1-11eb-8b4e-d371c834d9e9.PNG)
