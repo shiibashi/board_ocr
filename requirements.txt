@@ -1,6 +1,6 @@
 imagehash==4.0
 keras==2.3.1
-opencv-python==4.1.2.30
+opencv-python==4.2.0.32
 numpy==1.18.1
 pillow==7.0.0
 pyscreenshot==1.0
